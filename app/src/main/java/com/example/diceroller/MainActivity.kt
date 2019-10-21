@@ -22,10 +22,19 @@ class MainActivity : AppCompatActivity() {
             this, "button clicked",
             Toast.LENGTH_SHORT
         ).show()
+
         val resultText: TextView = findViewById(R.id.result_text)
-        resultText.text = "Dice Rolled!"
+        val resultText2: TextView = findViewById(R.id.dice2)
+        val resultText3: TextView = findViewById(R.id.dice3)
+
 
         val randomInt = Random.nextInt(6)+1
         resultText.text = randomInt.toString()
+
+        val randomInt2 = Random.nextInt(6)+1
+        resultText2.text = randomInt2.toString()
+
+        val randomInt3 = Random.nextInt(6)+1
+        resultText3.text = randomInt3.toString()
     }
 }
